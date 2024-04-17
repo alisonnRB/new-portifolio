@@ -3,12 +3,43 @@ import foto from '../../assets/draws/foto.png';
 
 export default function About() {
     const [cor, setCor] = useState('');
+    const [name, setName] = useState('');
+    const [init, setInit] = useState(false);
 
     useEffect(() => {
-        if (!cor) {
+        if (init) {
+            setInit(true);
             traverseList();
+            writeName();
+        } else {
+            return;
+        }
+    }, [init])
+
+    useEffect(() => {
+        if (!init) {
+            setInit(true)
+        } else {
+            return;
         }
     }, [])
+
+    function writeName() {
+        if(name){
+            return;
+        }
+        const nameList = 'ÁLLISON BATISTA';
+        let i = 0;
+        const interval = setInterval(() => {
+            setName((prevName) => prevName + nameList[i]);
+            i++;
+            if (i == nameList.length - 1) {
+                clearInterval(interval);
+            }
+        }, 200);
+
+        return () => clearInterval(interval);
+    }
 
 
     function traverseList() {
@@ -33,10 +64,9 @@ export default function About() {
                 <img src={foto} alt="foto do autor" className="grayscale scale-75" />
                 <div>
                     <p className="text-[38px]">HI, I AM</p>
-                    <div className="inline-block overflow-hidden pr-3">
-                        <p className="text-[60px] mt-[-5px] mb-[-10px] text-nowrap transition-colors duration-1000" style={{ color: cor }}>ÁLISON BATISTA </p>
-                        <div className="type mt-[-85px] border-l-4 transition-colors duration-1000" style={{ borderLeftColor: cor }}></div>
-                        <div className="border-r-4 mt-[-65px] translate-x-3 h-[65px] relative z-10 transition-colors duration-1000 pisca" style={{ borderColor: cor }}></div>
+                    <div className="flex pr-3 h-[70px]">
+                        <p className="text-[60px] mt-[-5px] mb-[-10px] text-nowrap transition-colors duration-1000 pr-2" style={{ color: cor}}>{name}</p>
+                        <div className="h-[60px] w-1 bg-white transition-colors pisca" style={{backgroundColor: cor}}></div>
                     </div>
 
                     <p className="text-[45px] ml-16">FULLSTACK DEVELOPER</p>

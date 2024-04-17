@@ -35,46 +35,10 @@ html,
     background-position: calc(50vw + 100px) -45%;
 }
 
-.type {
-    background-color: #111111;
-    height: 65px;
-    width: 0;
-    padding-right: 2px;
-    position: relative;
-    visibility: hidden;
-    z-index: 20;
-
-    animation: typing 3s, pisca 1.5s infinite;
-    animation-timing-function: steps(20, end)
-
-}
-
 .pisca{
-    animation: piscaR 1s infinite;
+    animation: piscaR 1.5s infinite ease;
 }
 
-@keyframes typing {
-    0% {
-        transform: translateX(0);
-        width: 500px;
-        visibility: visible;
-    }
-
-    100% {
-        transform: translateX(500px);
-        width: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes pisca {
-    0%{
-        border-left: solid 4px;
-    }
-    100%{
-        border-left: transparent;
-    }
-}
 
 @keyframes piscaR {
     0%{
