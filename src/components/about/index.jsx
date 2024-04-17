@@ -32,11 +32,11 @@ export default function About() {
             <div className="flex items-center justify-center">
                 <img src={foto} alt="foto do autor" className="grayscale scale-75" />
                 <div>
-                    <p className="text-[38px]">HI, IAM</p>
+                    <p className="text-[38px]">HI, I AM</p>
                     <div className="inline-block overflow-hidden pr-3">
                         <p className="text-[60px] mt-[-5px] mb-[-10px] text-nowrap transition-colors duration-1000" style={{ color: cor }}>ÁLISON BATISTA </p>
                         <div className="type mt-[-85px] border-l-4 transition-colors duration-1000" style={{ borderLeftColor: cor }}></div>
-                        <div className="border-r-4 mt-[-65px] translate-x-3 h-[65px] relative z-10 transition-colors duration-1000" style={{ borderColor: cor }}></div>
+                        <div className="border-r-4 mt-[-65px] translate-x-3 h-[65px] relative z-10 transition-colors duration-1000 pisca" style={{ borderColor: cor }}></div>
                     </div>
 
                     <p className="text-[45px] ml-16">FULLSTACK DEVELOPER</p>

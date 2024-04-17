@@ -32,7 +32,7 @@ html,
 .bgImageCircle {
     background-image: url('./assets/draws/bg-circle.png') !important;
     background-repeat: no-repeat;
-    background-position: 700% -45%;
+    background-position: calc(50vw + 100px) -45%;
 }
 
 .type {
@@ -50,7 +50,7 @@ html,
 }
 
 .pisca{
-    animation: piscaR 1.5s infinite;
+    animation: piscaR 1s infinite;
 }
 
 @keyframes typing {
@@ -78,9 +78,9 @@ html,
 
 @keyframes piscaR {
     0%{
-        border-right: solid 4px;
+        opacity: 0;
     }
     100%{
-        border-right: transparent;
+        opacity: 1;
     }
 }
