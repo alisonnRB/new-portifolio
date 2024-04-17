@@ -48,3 +48,11 @@ html,
         opacity: 1;
     }
 }
+
+
+.content {
+    position: sticky;
+    top: 10%;
+    transform: translateY(-10%);
+    margin: 0 auto;
+}
