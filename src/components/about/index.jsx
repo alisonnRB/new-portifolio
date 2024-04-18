@@ -58,29 +58,29 @@ export default function About() {
     }
 
     return (
-        <section className="bgImageCircle w-[100%]">
+        <section className="bgImageCircle w-[100%] max-sm:mt-[-150px]">
             <span id="about"></span>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center ml-[-1.5rem] max-lg:scale-75 max-md:scale-[0.6] max-sm:scale-[0.4] max-[320px]:scale-[0.35] max-[295px]:scale-[0.25]">
                 <img src={foto} alt="foto do autor" className="grayscale scale-75" />
-                <div>
+                <div className="ml-[-2rem]">
                     <p className="text-[38px]">HI, I AM</p>
                     <div className="flex pr-3 h-[70px]">
                         <p className="text-[60px] mt-[-5px] mb-[-10px] text-nowrap transition-colors duration-1000 pr-2" style={{ color: cor}}>{name}</p>
                         <div className="h-[60px] w-1 bg-white transition-colors pisca" style={{backgroundColor: cor}}></div>
                     </div>
 
-                    <p className="text-[45px] ml-16">FULLSTACK DEVELOPER</p>
+                    <p className="text-[45px] ml-12 text-nowrap">FULLSTACK DEVELOPER</p>
                     <button className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">DOWNLOAD CV</button>
                 </div>
             </div>
 
             <div className="flex ml-[10vw]">
-                <p className="rotate-[-90deg] text-[20px] relative left-48 bottom-24 text-nowrap">ABOUT ME</p>
-                <span className="max-w-[700px] pl-[30px] border-l-4 py-5 transition-colors duration-1000" style={{ borderLeftColor: cor }}>
-                    <p className="text-[25px] mb-10 break-words">
+                <p className="rotate-[-90deg] text-[20px] h-1 w-1 text-nowrap relative top-[10ch] right-[2.5ch]">ABOUT ME</p>
+                <span className="max-w-[700px] pl-[30px] pr-[10px] border-l-4 py-5 transition-colors duration-1000" style={{ borderLeftColor: cor }}>
+                    <p className="text-[25px] mb-10 break-words  max-[420px]:text-[20px]">
                         MY NAME IS ÁLISON, I'M <span className="font-sans">20</span> YEARS OLD, I'M A FULLSTACK DEVELOPER PASSIONATE ABOUT WRITING LINES OF CODE HAVING GOOD COFFEE.
                     </p>
-                    <p className="text-[25px] break-words">
+                    <p className="text-[25px] break-words max-[420px]:text-[20px]">
                         I'M A COMPUTER TECHNICIAN, CURRENTLY STUDYING SYSTEMS ANALYSIS AND DEVELOPMENT UNDER IFRS, I CAN'T WAIT TO CREATE SOMETHING INCREDIBLE TOGETHER.
                     </p>
                 </span>

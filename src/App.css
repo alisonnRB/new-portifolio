@@ -52,7 +52,13 @@ html,
 
 .content {
     position: sticky;
-    top: 10%;
-    transform: translateY(-10%);
+    top: 1%;
+    transform: translateY(-1%);
     margin: 0 auto;
+}
+
+@media (min-width: 1600px) {
+    .bgImageCircle {
+        background-position: calc(50vw + 500px) -45%;
+    }
 }

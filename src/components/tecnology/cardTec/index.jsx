@@ -14,8 +14,6 @@ export default function CardTec(props) {
     };
 
     const imageStyle = {
-        maxHeight: "70%",
-        maxWidth: "70px",
         transition: "transform 0.3s, filter 0.3s",
         cursor: "pointer",
         ...(isHovered && {
@@ -25,14 +23,15 @@ export default function CardTec(props) {
     };
 
     return (
-        <div className="w-[100px] flex flex-col items-center gap-2 mb-5">
-            <p className="text-center text-nowrap">{props.Tec.Name}</p>
+        <div className="w-[100px] flex flex-col items-center gap-2 mb-5 max-sm:w-[70px] max-[559px]:w-[50px]">
+            <p className="text-center text-nowrap max-sm:text-[.8em] max-[559px]:text-[.6em]">{props.Tec.Name}</p>
             <div
                 className="h-full w-full flex justify-center items-center"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
                 <img
+                    className="max-h-[70%] max-w-[70px] max-sm:max-w-[55px] max-[559px]:max-w-[35px]"
                     style={imageStyle}
                     src={props.Tec.logo}
                     alt={`logo do ${props.Tec.Name}`}
