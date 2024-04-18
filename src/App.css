@@ -32,7 +32,7 @@ html,
 .bgImageCircle {
     background-image: url('./assets/draws/bg-circle.png') !important;
     background-repeat: no-repeat;
-    background-position: calc(50vw + 100px) -45%;
+    background-position: calc(50vw + 200px) -45%;
 }
 
 .pisca{
@@ -57,7 +57,7 @@ html,
     margin: 0 auto;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
     .bgImageCircle {
         background-position: calc(50vw + 500px) -45%;
     }

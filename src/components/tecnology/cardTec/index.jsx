@@ -5,7 +5,12 @@ export default function CardTec(props) {
 
     const handleMouseEnter = () => {
         setIsHovered(true);
-        props.setDesc(props.Tec.description);
+        if (props.lang == "PT_BR") {
+            props.setDesc(props.Tec.description);
+        }else{
+            props.setDesc(props.Tec.descriptionEn);
+        }
+
     };
 
     const handleMouseLeave = () => {
