@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from '../header';
 import About from "../about";
 import Tecnology from "../tecnology";
+import Projects from "../projects";
 
 export default function Body(){
     const [lang, setLang] = useState('PT_BR');
@@ -10,6 +11,7 @@ export default function Body(){
             <Header  setLang={setLang} lang={lang}/>
             <About lang={lang}/>
             <Tecnology lang={lang}/>
+            <Projects lang={lang} />
         </main>
     );
 }

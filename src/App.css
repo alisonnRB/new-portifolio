@@ -62,3 +62,7 @@ html,
         background-position: calc(50vw + 500px) -45%;
     }
 }
+
+.trans{
+    transition: max-width 0.5s, padding 0.5s;
+}

@@ -14,7 +14,9 @@ module.exports = {
         background: "#111111",
         filter: "rgba(255, 255, 255, 0.15)",
         border: "rgba(255, 255, 255, 0.25)",
-        fontCol: "rgba(255, 255, 255, 0.5)"
+        fontCol: "rgba(255, 255, 255, 0.5)",
+        projectGrade: "rgba(0, 0, 0, 0.75)",
+        projectGradeM: "rgba(0, 0, 0, 0.9)",
       },
     },
   },
