@@ -31,7 +31,7 @@ export default function CardProj(props) {
     } else {
         return (
             <div
-                className="bg-filter h-[370px] w-[700px] px-[10%] max-w-[700px] mb-6 shadow-[0_0_10px_rgba(255,255,255,0.2)] flex justify-center items-center
+                className="bg-filter h-[370px] max-w-[700px] mb-6 shadow-[0_0_10px_rgba(255,255,255,0.2)] flex justify-center items-center
                 max-[1490px]:max-w-[600px]
                 max-[1290px]:max-w-[500px]
                 max-[1090px]:max-w-[400px] max-[1090px]:h-[320px]
@@ -39,7 +39,7 @@ export default function CardProj(props) {
                 max-[560px]:max-w-[90vw] max-[1090px]:h-[280px]
                 max-[390px]:max-w-[95vw]"
             >
-                <p className="text-center text-[20px] break-words">
+                <p className="text-center text-[20px] break-words w-[80%]">
                     {props.lang == "PT_BR" ? `FAÇA SEU CAFÉ, MAIS PROJETOS ${props.tag} ESTÃO VINDO` : `MAKE YOUR COFFEE, MORE ${props.tag} PROJECTS ARE COMING`}
                 </p>
 
