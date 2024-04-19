@@ -10,7 +10,7 @@ export default function Infos(props) {
         const list = [];
         
         for(let i = 0; i<props.infos.more.length; i++){
-            let item = <p key={i} className="text-nowrap text-[.9em]">{props.infos.more[i]}</p>
+            let item = <p key={i} className="text-[.9em] break-words text-center">{props.infos.more[i]}</p>
             list.push(item);
         }
 

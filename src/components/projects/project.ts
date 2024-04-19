@@ -7,6 +7,7 @@ import palabrariaB from '../../assets/projects/palabraria_layout.png';
 import ligths from '../../assets/projects/ligths_page.png';
 import portifolio from '../../assets/projects/portifolio_page.png';
 import myQuest from '../../assets/projects/myQuest_page.png';
+import box from '../../assets/projects/buildBox_page.png';
 
 import colorAnalist from '../../assets/projects/colorAnalist_page.png';
 import colorAnalistB from '../../assets/projects/colorAnalist_layout.png';
@@ -103,6 +104,16 @@ const listProj =
         repository: "https://github.com/alisonnRB/new-portifolio",
         more: ['REACT', "JAVASCRIPT", "TAILWIND", "HTML", "CSS", "TYPESCRIPT"],
         img: portifolio,
+    },
+    {
+        name: "BUILD BOX",
+        tag: "FRONT END",
+        describe: "ESSE FOI MEU PRIMEIRO DESAFIO DEV, CONSISTE NA REPRODUÇÃO DO DESIGN DE UM SISTEMA DE PUBLICAÇÕES NO FRONT END",
+        describeEn: "THIS WAS MY FIRST DEV CHALLENGE, CONSISTS OF REPRODUCING THE DESIGN OF A FRONT END PUBLICATION SYSTEM",
+        site: "https://web-developer-challenge-gray.vercel.app/",
+        repository: "https://github.com/alisonnRB/web-developer-challenge",
+        more: ['REACT', "TYPESCRIPT", "STYLED COMPONENTS", "HTML", "CSS", "JAVASCRIPT"],
+        img: box,
     },
 ];
 
