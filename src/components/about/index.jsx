@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import foto from '../../assets/draws/foto.png';
 import { useInView } from "react-intersection-observer";
+import cv from '../../assets/doc/curriculo.pdf';
 
 export default function About(props) {
     const text = {
@@ -70,6 +71,19 @@ export default function About(props) {
         return Math.floor(Math.random() * 256);
     }
 
+    const handleDownload = () => {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = cv;
+        downloadLink.download = 'curriculo.pdf';
+        document.body.appendChild(downloadLink);
+
+
+        downloadLink.click();
+
+
+        document.body.removeChild(downloadLink);
+    };
+
     return (
         <section className="bgImageCircle w-[100%] max-sm:mt-[-150px]">
             <div id="about" ref={ref} className="h-2 w-2"></div>
@@ -83,7 +97,7 @@ export default function About(props) {
                     </div>
 
                     <p className="text-[45px] ml-12 text-nowrap">FULLSTACK DEVELOPER</p>
-                    <button className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">DOWNLOAD CV</button>
+                    <button onClick={()=>{handleDownload()}} className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">DOWNLOAD CV</button>
                 </div>
             </div>
 
