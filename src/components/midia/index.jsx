@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import email from '../../assets/contatos/email.png';
 import git from '../../assets/contatos/git_hub.png';
 import linke from '../../assets/contatos/linkedin.png';
 import phone from '../../assets/contatos/phone.png';
+import { useInView } from "react-intersection-observer";
 
 export default function Midia(props) {
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            props.setView("contact");
+        }
+    }, [inView]);
+
     return (
         <section className="flex flex-col items-center justify-center mt-80">
-            <span id="midia"></span>
+            <div id="contact" ref={ref} className="h-2 w-2"></div>
 
             <p className="text-[40px] mb-44">{props.lang == "PT_BR" ? "CONTATOS" : "CONTACTS"}</p>
 

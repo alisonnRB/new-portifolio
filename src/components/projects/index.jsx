@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CardProj from "./cardProj";
 import { listProj } from "./project.ts";
+import { useInView } from "react-intersection-observer";
 
 export default function Projects(props) {
     const [type, setType] = useState("FRONT END");
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            props.setView("proj");
+        }
+    }, [inView]);
 
     return (
         <section className="flex flex-col justify-center items-center mt-80">
-            <span id="proj"></span>
+            <div id="proj" ref={ref} className="h-2 w-2"></div>
 
             <p className="text-[40px] mb-44 bg-filter w-[50%] flex justify-center items-center py-5 rounded-bl-2xl rounded-tr-2xl max-[1090px]:w-[80%]">{props.lang == 'PT_BR' ? "PROJETOS" : "PROJECTS"}</p>
 

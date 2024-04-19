@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import foto from '../../assets/draws/foto.png';
+import { useInView } from "react-intersection-observer";
 
 export default function About(props) {
     const text = {
@@ -13,6 +14,8 @@ export default function About(props) {
     const [cor, setCor] = useState('');
     const [name, setName] = useState('');
     const [init, setInit] = useState(false);
+
+    const [ref, inView] = useInView();
 
     useEffect(() => {
         if (init) {
@@ -31,6 +34,12 @@ export default function About(props) {
             return;
         }
     }, [])
+
+    useEffect(() => {
+        if (inView) {
+            props.setView("about");
+        }
+    }, [inView]);
 
     function writeName() {
         if (name) {
@@ -67,7 +76,7 @@ export default function About(props) {
 
     return (
         <section className="bgImageCircle w-[100%] max-sm:mt-[-150px]">
-            <span id="about"></span>
+            <div id="about" ref={ref} className="h-2 w-2"></div>
             <div className="flex items-center justify-center ml-[-1.5rem] max-lg:scale-75 max-md:scale-[0.6] max-sm:scale-[0.4] max-[320px]:scale-[0.35] max-[295px]:scale-[0.25]">
                 <img src={foto} alt="foto do autor" className="grayscale scale-75" />
                 <div className="ml-[-2rem]">
