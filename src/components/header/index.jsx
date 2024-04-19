@@ -9,7 +9,7 @@ export default function Header(props) {
     }
 
     return (
-        <header className="h-[80px] w-[100vw] bg-filter fixed top-0 z-50 flex items-center justify-center border-b-[1px] border-border max-[295px]:h-[60px]">
+        <header className="h-[80px] w-[100vw] bg-filter fixed top-0 z-50 flex items-center justify-center border-b-[1px] border-border max-[295px]:h-[60px] select-none">
             <span className="flex items-center justify-center gap-x-16 max-sm:scale-75 max-sm:gap-x-10 max-[320px]:gap-x-5 max-[295px]:scale-50">
                 <p className="text-fontCol hover:text-white cursor-pointer" onClick={()=>{props.scroll("about")}} style={props.view == "about" ? {color: "white"} : null}>{text.about[props.lang]}</p>
                 <p className="text-fontCol hover:text-white cursor-pointer" onClick={()=>{props.scroll("tech")}} style={props.view == "tech" ? {color: "white"} : null}>{text.tech[props.lang]}</p>

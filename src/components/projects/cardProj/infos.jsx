@@ -26,9 +26,9 @@ export default function Infos(props) {
                 <p className="text-[20px] max-[1090px]:text-[12px]">{props.infos.name}</p>
 
                 <p className="text-[13px] 
-                    max-[1290px]:text-[11px]
-                    max-[1090px]:text-[9px]
-                    max-[400px]:text-[7px]"
+                    max-[1290px]:text-[10px]
+                    max-[1090px]:text-[6.5px]
+                    max-[400px]:text-[5px]"
                 >
                     {props.lang == "PT_BR" ? props.infos.describe : props.infos.describeEn}
                 </p>

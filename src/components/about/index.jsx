@@ -85,35 +85,38 @@ export default function About(props) {
     };
 
     return (
-        <section className="bgImageCircle w-[100%] max-sm:mt-[-150px]">
+        <>
             <div id="about" ref={ref} className="h-2 w-2"></div>
-            <div className="flex items-center justify-center ml-[-1.5rem] max-lg:scale-75 max-md:scale-[0.6] max-sm:scale-[0.4] max-[320px]:scale-[0.35] max-[295px]:scale-[0.25]">
-                <img src={foto} alt="foto do autor" className="grayscale scale-75" />
-                <div className="ml-[-2rem]">
-                    <p className="text-[38px]">{text.hi[props.lang]}</p>
-                    <div className="flex pr-3 h-[70px]">
-                        <p className="text-[60px] mt-[-5px] mb-[-10px] text-nowrap transition-colors duration-1000 pr-2" style={{ color: cor }}>{name}</p>
-                        <div className="h-[60px] w-1 bg-white transition-colors pisca" style={{ backgroundColor: cor }}></div>
+            <section className="bgImageCircle w-[100%] max-sm:mt-[-150px]">
+
+                <div className="flex items-center justify-center ml-[-1.5rem] max-lg:scale-75 max-md:scale-[0.6] max-sm:scale-[0.4] max-[320px]:scale-[0.35] max-[295px]:scale-[0.25]">
+                    <img src={foto} alt="foto do autor" className="grayscale scale-75" />
+                    <div className="ml-[-2rem]">
+                        <p className="text-[38px]">{text.hi[props.lang]}</p>
+                        <div className="flex pr-3 h-[70px]">
+                            <p className="text-[60px] mt-[-5px] mb-[-10px] text-nowrap transition-colors duration-1000 pr-2" style={{ color: cor }}>{name}</p>
+                            <div className="h-[60px] w-1 bg-white transition-colors pisca" style={{ backgroundColor: cor }}></div>
+                        </div>
+
+                        <p className="text-[45px] ml-12 text-nowrap">FULLSTACK DEVELOPER</p>
+                        <button onClick={() => { handleDownload() }} className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">
+                            <p className="relative top-[0.3ch]">DOWNLOAD CV</p>
+                        </button>
                     </div>
-
-                    <p className="text-[45px] ml-12 text-nowrap">FULLSTACK DEVELOPER</p>
-                    <button onClick={() => { handleDownload() }} className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">
-                        <p className="relative top-[0.3ch]">DOWNLOAD CV</p>
-                    </button>
                 </div>
-            </div>
 
-            <div className="flex ml-[10vw]">
-                <p className="rotate-[-90deg] text-[20px] h-1 w-1 text-nowrap relative top-[10ch] right-[2.5ch]">{text.about[props.lang]}</p>
-                <span className="max-w-[700px] pl-[30px] pr-[10px] border-l-4 py-5 transition-colors duration-1000" style={{ borderLeftColor: cor }}>
-                    <p className="text-[25px] mb-10 break-words  max-[420px]:text-[20px]">
-                        {text.name[props.lang]} <span className="font-sans">20</span> {text.old[props.lang]}
-                    </p>
-                    <p className="text-[25px] break-words max-[420px]:text-[20px]">
-                        {text.presentation[props.lang]}
-                    </p>
-                </span>
-            </div>
-        </section>
+                <div className="flex ml-[10vw]">
+                    <p className="rotate-[-90deg] text-[20px] h-1 w-1 text-nowrap relative top-[10ch] right-[2.5ch]">{text.about[props.lang]}</p>
+                    <span className="max-w-[700px] pl-[30px] pr-[10px] border-l-4 py-5 transition-colors duration-1000" style={{ borderLeftColor: cor }}>
+                        <p className="text-[25px] mb-10 break-words  max-[420px]:text-[20px]">
+                            {text.name[props.lang]} <span className="font-sans">20</span> {text.old[props.lang]}
+                        </p>
+                        <p className="text-[25px] break-words max-[420px]:text-[20px]">
+                            {text.presentation[props.lang]}
+                        </p>
+                    </span>
+                </div>
+            </section>
+        </>
     );
 }
