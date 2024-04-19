@@ -21,8 +21,8 @@ const tecList =
     {
         Name: "REACT",
         logo: react,
-        description: "React é uma biblioteca de JavaScript popular para construir interfaces de usuário (UI). Desenvolvida pelo Facebook, ela é usada para criar componentes reutilizáveis e interativos para páginas web.",
-        descriptionEn: "React is a popular JavaScript library for building user interfaces (UI). Developed by Facebook, it is used to create reusable and interactive components for web pages.",
+        description: "React é uma biblioteca de JavaScript popular para construir interfaces de usuário (UI). Desenvolvida pelo Meta, ela é usada para criar componentes reutilizáveis e interativos para páginas web.",
+        descriptionEn: "React is a popular JavaScript library for building user interfaces (UI). Developed by Meta, it is used to create reusable and interactive components for web pages.",
         color: "#61DAFB",
     },
     {
