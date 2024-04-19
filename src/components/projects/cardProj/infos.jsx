@@ -23,27 +23,31 @@ export default function Infos(props) {
                 style={props.hover ? {opacity: 1} : {opacity: 0}}
             >
         
-                <p className="text-[20px]">{props.infos.name}</p>
+                <p className="text-[20px] max-[1090px]:text-[12px]">{props.infos.name}</p>
 
-                <p className="text-[13px]">
+                <p className="text-[13px] 
+                    max-[1290px]:text-[11px]
+                    max-[1090px]:text-[9px]
+                    max-[400px]:text-[7px]"
+                >
                     {props.lang == "PT_BR" ? props.infos.describe : props.infos.describeEn}
                 </p>
 
                 <span className="flex justify-around w-full">
                     <div className="flex flex-col items-center gap-2">
-                        <p className="text-[8px]">{props.lang == "PT_BR" ? "REPOSITÓRIO" : "REPOSITORY"}</p>
-                        <a href={props.infos.repository}><img className="h-[35px] w-[35px] cursor-pointer" src={github} alt="github" /></a>
+                        <p className="text-[8px] max-[450px]:hidden">{props.lang == "PT_BR" ? "REPOSITÓRIO" : "REPOSITORY"}</p>
+                        <a href={props.infos.repository}><img className="h-[35px] w-[35px] cursor-pointer max-[1090px]:h-[25px] max-[1090px]:w-[25px]" src={github} alt="github" /></a>
                     </div>
 
                     {props.infos.site ?
                         <div className="flex flex-col gap-2">
-                            <p className="text-[8px]">SITE</p>
-                            <a href={props.infos.site}><img className="h-[35px] w-[35px] cursor-pointer" src={link} alt="link" /></a>
+                            <p className="text-[8px] max-[450px]:hidden">SITE</p>
+                            <a href={props.infos.site}><img className="h-[35px] w-[35px] cursor-pointer max-[1090px]:h-[25px] max-[1090px]:w-[25px]" src={link} alt="link" /></a>
                         </div> : null}
 
                     <div className="flex flex-col gap-2">
-                        <p className="text-[8px]">{props.lang == "PT_BR" ? "MAIS" : "MORE"}</p>
-                        <img className="h-[35px] w-[35px] cursor-pointer transition-[rotate] ease-in" style={moreOp ? { rotate: "90deg" } : null} onClick={() => { setMoreOp(!moreOp) }} src={more} alt="mais" />
+                        <p className="text-[8px] max-[450px]:hidden">{props.lang == "PT_BR" ? "MAIS" : "MORE"}</p>
+                        <img className="h-[35px] w-[35px] cursor-pointer max-[1090px]:h-[25px] max-[1090px]:w-[25px] transition-[rotate] ease-in" style={moreOp ? { rotate: "90deg" } : null} onClick={() => { setMoreOp(!moreOp) }} src={more} alt="mais" />
                     </div>
                 </span>
             </div>
@@ -52,9 +56,9 @@ export default function Infos(props) {
                 style={moreOp && props.hover? { maxWidth: "23%" } : { maxWidth: "0", padding: "0", border: "none" }}
             >
 
-                <p className="border-b-[1px] border-white px-[3px] text-[15px] text-center">{props.lang == "PT_BR" ? "UTILIZADO" : "USED"}</p>
+                <p className="border-b-[1px] border-white px-[3px] text-[15px] text-center max-[1090px]:text-[10px] max-[400px]:text-[7px]">{props.lang == "PT_BR" ? "UTILIZADO" : "USED"}</p>
 
-                <span className="flex flex-col gap-2 items-center pt-5">
+                <span className="flex flex-col gap-2 items-center pt-5 max-[1090px]:text-[.7em] max-[400px]:text-[.5em]">
                     {geraUtilit()}
                 </span>
 
