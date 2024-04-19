@@ -5,7 +5,7 @@ export default function Header(props) {
         about: {"PT_BR": "SOBRE", "EN_US": "ABOUT"},
         tech: {"PT_BR": "TECNOLOGIAS", "EN_US": "TECHNOLOGIES"},
         projeto: {"PT_BR": "PROJETOS", "EN_US": "PROJECTS"},
-        contato: {"PT_BR": "MÍDIAS", "EN_US": "MEDIA"},
+        contato: {"PT_BR": "CONTATOS", "EN_US": "CONTACTS"},
     }
 
     return (
@@ -16,8 +16,6 @@ export default function Header(props) {
                 <p className="text-fontCol hover:text-white cursor-pointer">{text.projeto[props.lang]}</p>
                 <p className="text-fontCol hover:text-white cursor-pointer">{text.contato[props.lang]}</p>
             </span>
-
-            <p className="text-fontCol hover:text-white cursor-pointer absolute right-2 top-2 text-[15px]" onClick={()=>{props.lang == "PT_BR" ? props.setLang("EN_US") : props.setLang("PT_BR")}}>{props.lang}</p>
         </header>
     );
 }

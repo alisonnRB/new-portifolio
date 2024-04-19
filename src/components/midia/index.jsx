@@ -4,12 +4,12 @@ import git from '../../assets/contatos/git_hub.png';
 import linke from '../../assets/contatos/linkedin.png';
 import phone from '../../assets/contatos/phone.png';
 
-export default function Midia() {
+export default function Midia(props) {
     return (
         <section className="flex flex-col items-center justify-center mt-80">
             <span id="midia"></span>
 
-            <p className="text-[40px] mb-44">CONTATOS</p>
+            <p className="text-[40px] mb-44">{props.lang == "PT_BR" ? "CONTATOS" : "CONTACTS"}</p>
 
 
             <span className="flex items-center justify-center gap-20 flex-wrap">
