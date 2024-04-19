@@ -12,7 +12,7 @@ export default function CardProj(props) {
                 max-[1290px]:max-w-[500px]
                 max-[1090px]:max-w-[400px] max-[1090px]:h-[320px]
                 max-[890px]:max-w-[80vw]
-                max-[560px]:max-w-[90vw] max-[1090px]:h-[280px]
+                max-[560px]:max-w-[90vw] max-[1090px]:h-[240px]
                 max-[390px]:max-w-[95vw]"
                 style={{
                     backgroundImage: `url(${props.infos.img})`,
@@ -36,7 +36,7 @@ export default function CardProj(props) {
                 max-[1290px]:max-w-[500px]
                 max-[1090px]:max-w-[400px] max-[1090px]:h-[320px]
                 max-[890px]:max-w-[80vw]
-                max-[560px]:max-w-[90vw] max-[1090px]:h-[280px]
+                max-[560px]:max-w-[90vw] max-[1090px]:h-[240px]
                 max-[390px]:max-w-[95vw]"
             >
                 <p className="text-center text-[20px] break-words w-[80%]">
