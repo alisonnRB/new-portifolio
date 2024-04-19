@@ -42,20 +42,16 @@ export default function About(props) {
     }, [inView]);
 
     function writeName() {
-        if (name) {
-            return;
-        }
-        const nameList = 'ÁLLISON BATISTA';
+        const nameList = [" ", "Á", "L", "I", "S", "O", "N", " ", "B", "A", "T", "I", "S", "T", "A", " "];
         let i = 0;
         const interval = setInterval(() => {
             setName((prevName) => prevName + nameList[i]);
             i++;
+
             if (i == nameList.length - 1) {
                 clearInterval(interval);
             }
         }, 200);
-
-        return () => clearInterval(interval);
     }
 
 
