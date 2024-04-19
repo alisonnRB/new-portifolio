@@ -42,18 +42,18 @@ export default function About(props) {
         }
     }, [inView]);
 
-    function writeName() {
-        const nameList = [" ", "Á", "L", "I", "S", "O", "N", " ", "B", "A", "T", "I", "S", "T", "A", " "];
-        let i = 0;
-        const interval = setInterval(() => {
-            setName((prevName) => prevName + nameList[i]);
-            i++;
-
-            if (i == nameList.length - 1) {
-                clearInterval(interval);
-            }
-        }, 200);
+    async function writeName() {
+        setName('');
+        const nameList = "ÁLISON BATISTA";
+        for (let i = 0; i < nameList.length; i++) {
+            setName((prevState) => prevState + nameList[i]);
+            await delay(200);
+        }
     }
+
+    const delay = (delayInms) => {
+        return new Promise(resolve => setTimeout(resolve, delayInms));
+    };
 
 
     function traverseList() {
@@ -97,7 +97,9 @@ export default function About(props) {
                     </div>
 
                     <p className="text-[45px] ml-12 text-nowrap">FULLSTACK DEVELOPER</p>
-                    <button onClick={()=>{handleDownload()}} className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">DOWNLOAD CV</button>
+                    <button onClick={() => { handleDownload() }} className="bg-border cursor-pointer mt-[20px] w-[320px] h-[70px] text-[1.8em] hover:bg-fontCol rounded-md">
+                        <p className="relative top-[0.3ch]">DOWNLOAD CV</p>
+                    </button>
                 </div>
             </div>
 

@@ -5,7 +5,7 @@ import palabraria from '../../assets/projects/palabraria_page.png';
 import palabrariaB from '../../assets/projects/palabraria_layout.png';
 
 import ligths from '../../assets/projects/ligths_page.png';
-
+import portifolio from '../../assets/projects/portifolio_page.png';
 import myQuest from '../../assets/projects/myQuest_page.png';
 
 import colorAnalist from '../../assets/projects/colorAnalist_page.png';
@@ -93,6 +93,16 @@ const listProj =
         repository: "https://github.com/alisonnRB/Portifolio",
         more: ["REACT", "JAVASCRIPT", "SASS", "HTML"],
         img: ligths,
+    },
+    {
+        name: "PORTFÓLIO",
+        tag: "FRONT END",
+        describe: "PORTFÓLIO DESENVOLVIDO PARA APRESENTAR MINHAS HABILIDADES E POTENCIAL.",
+        describeEn: "PORTFOLIO DESIGNED TO PRESENT MY SKILLS AND POTENTIAL.",
+        site: "",
+        repository: "https://github.com/alisonnRB/new-portifolio",
+        more: ['REACT', "JAVASCRIPT", "TAILWIND", "HTML", "CSS", "TYPESCRIPT"],
+        img: portifolio,
     },
 ];
 
