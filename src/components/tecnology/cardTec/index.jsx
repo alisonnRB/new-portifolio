@@ -36,7 +36,7 @@ export default function CardTec(props) {
                 onMouseLeave={handleMouseLeave}
             >
                 <img
-                    className="max-h-[70%] max-w-[70px] max-sm:max-w-[55px] max-[559px]:max-w-[35px] max-[360px]:max-w-[25px]"
+                    className="max-h-[70%] max-w-[70px] max-sm:max-w-[55px] max-[559px]:max-w-[35px] max-[400px]:max-h-[100%]"
                     style={imageStyle}
                     src={props.Tec.logo}
                     alt={`logo do ${props.Tec.Name}`}
