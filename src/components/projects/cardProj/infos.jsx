@@ -58,7 +58,7 @@ export default function Infos(props) {
 
                 <p className="border-b-[1px] border-white px-[3px] text-[15px] text-center max-[1090px]:text-[10px] max-[400px]:text-[7px]">{props.lang == "PT_BR" ? "UTILIZADO" : "USED"}</p>
 
-                <span className="flex flex-col gap-2 items-center pt-5 max-[1090px]:text-[.7em] max-[400px]:text-[.5em]">
+                <span className="flex flex-col gap-2 items-center pt-5 max-[1090px]:text-[.5em] max-[400px]:text-[.5em]">
                     {geraUtilit()}
                 </span>
 

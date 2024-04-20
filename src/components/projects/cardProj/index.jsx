@@ -9,11 +9,11 @@ export default function CardProj(props) {
             <div
                 className="h-[370px] min-w-[700px] max-w-[700px] mb-6 bg-center transition-all shadow-[0_0_10px_rgba(255,255,255,0.2)] flex justify-end 
                 max-[1490px]:max-w-[600px] max-[1490px]:min-w-[600px]
-                max-[1290px]:max-w-[500px] max-[1290px]:min-w-[500px]
-                max-[1090px]:max-w-[400px] max-[1090px]:min-w-[400px] max-[1090px]:h-[320px]
+                max-[1290px]:max-w-[500px] max-[1290px]:min-w-[500px] max-[1290px]:h-[320px]
+                max-[1090px]:max-w-[400px] max-[1090px]:min-w-[400px] max-[1090px]:h-[260px]
                 max-[890px]:max-w-[80vw] max-[890px]:min-w-[80vw]
-                max-[560px]:max-w-[90vw] max-[560px]:min-w-[90vw] max-[1090px]:h-[220px]
-                max-[390px]:max-w-[95vw] max-[390px]:min-w-[95vw]"
+                max-[560px]:max-w-[90vw] max-[560px]:min-w-[90vw] max-[560px]:h-[210px]
+                max-[390px]:max-w-[95vw] max-[390px]:min-w-[95vw] max-[390px]:h-[180px]"
                 style={{
                     backgroundImage: `url(${props.infos.img})`,
                     backgroundRepeat: props.infos.tag === "FRONT END" ? "no-repeat" : "repeat",
@@ -33,11 +33,11 @@ export default function CardProj(props) {
             <div
                 className="bg-filter h-[370px] max-w-[700px] min-w-[700px] mb-6 shadow-[0_0_10px_rgba(255,255,255,0.2)] flex justify-center items-center
                 max-[1490px]:max-w-[600px] max-[1490px]:min-w-[600px]
-                max-[1290px]:max-w-[500px] max-[1290px]:min-w-[500px]
-                max-[1090px]:max-w-[400px] max-[1090px]:min-w-[400px] max-[1090px]:h-[320px]
+                max-[1290px]:max-w-[500px] max-[1290px]:min-w-[500px] max-[1290px]:h-[320px]
+                max-[1090px]:max-w-[400px] max-[1090px]:min-w-[400px]
                 max-[890px]:max-w-[80vw] max-[890px]:min-w-[80vw]
-                max-[560px]:max-w-[90vw] max-[560px]:min-w-[90vw] max-[1090px]:h-[240px]
-                max-[390px]:max-w-[95vw] max-[390px]:min-w-[95vw]"
+                max-[560px]:max-w-[90vw] max-[560px]:min-w-[90vw] max-[560px]:h-[210px]
+                max-[390px]:max-w-[95vw] max-[390px]:min-w-[95vw] max-[390px]:h-[180px]"
             >
                 <p className="text-center text-[20px] break-words w-[80%]">
                     {props.lang == "PT_BR" ? `FAÇA SEU CAFÉ, MAIS PROJETOS ${props.tag} ESTÃO VINDO` : `MAKE YOUR COFFEE, MORE ${props.tag} PROJECTS ARE COMING`}
