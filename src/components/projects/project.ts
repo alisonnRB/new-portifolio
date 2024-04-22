@@ -91,7 +91,7 @@ const listProj =
         describe: "LIGHTS É UMA JOGO DE MEMORIZAÇAO BASEADA EM LUZES, QUE GERA VARIAÇÕES E DIFICULDADES DIFERENTES.",
         describeEn: "LIGHTS IS A MEMORIZATION GAME BASED ON LIGHTS, WHICH GENERATES DIFFERENT VARIATIONS AND DIFFICULTIES.",
         site: "https://portifolio-nu-azure.vercel.app/",
-        repository: "https://github.com/alisonnRB/Portifolio",
+        repository: "https://github.com/alisonnRB/Lights",
         more: ["REACT", "JAVASCRIPT", "SASS", "HTML"],
         img: ligths,
     },
