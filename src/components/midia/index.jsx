@@ -26,7 +26,7 @@ export default function Midia(props) {
                 <span className="flex items-center justify-center gap-20 flex-wrap">
                     <div className="flex flex-col gap-10 items-center w-[204px] max-[500px]:w-[160px] max-[400px]:w-[100px]">
                         <a href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={email} alt="email" /></a>
-                        <a href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">alionrbjs@gmail.com</p></a>
+                        <a href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">alisonrbjs@gmail.com</p></a>
                     </div>
 
                     <div className="flex flex-col gap-10 items-center w-[204px] max-[500px]:w-[160px] max-[400px]:w-[100px]">
