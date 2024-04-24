@@ -25,19 +25,19 @@ export default function Midia(props) {
 
                 <span className="flex items-center justify-center gap-20 flex-wrap">
                     <div className="flex flex-col gap-10 items-center w-[204px] max-[500px]:w-[160px] max-[400px]:w-[100px]">
-                        <a href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={email} alt="email" /></a>
-                        <a href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">alisonrbjs@gmail.com</p></a>
+                        <a target="_blank" href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={email} alt="email" /></a>
+                        <a target="_blank" href="https://gmail.google.com/mail/?view=cm&fs=1&to=alisonrbjs@gmail.com&su=Assunto do Email&body=Conteúdo do Email"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">alisonrbjs@gmail.com</p></a>
                     </div>
 
                     <div className="flex flex-col gap-10 items-center w-[204px] max-[500px]:w-[160px] max-[400px]:w-[100px]">
 
-                        <a href="https://github.com/alisonnRB"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={git} alt="github" /></a>
-                        <a href="https://github.com/alisonnRB"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">@alisonnRB</p></a>
+                        <a target="_blank" href="https://github.com/alisonnRB"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={git} alt="github" /></a>
+                        <a target="_blank" href="https://github.com/alisonnRB"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">@alisonnRB</p></a>
                     </div>
 
                     <div className="flex flex-col gap-10 items-center w-[204px] max-[500px]:w-[160px] max-[400px]:w-[100px]">
-                        <a href="https://www.linkedin.com/in/%C3%A1lison-de-rozado-batista-307a11287/"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={linke} alt="linkedin" /></a>
-                        <a href="https://www.linkedin.com/in/%C3%A1lison-de-rozado-batista-307a11287/"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">@Álison de Rozado Batista</p></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/%C3%A1lison-de-rozado-batista-307a11287/"><img className="cursor-pointer hover:scale-110 max-[500px]:w-[80px] max-[400px]:w-[50px]" src={linke} alt="linkedin" /></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/%C3%A1lison-de-rozado-batista-307a11287/"><p className="text-[20px] cursor-pointer max-[500px]:text-[15px] max-[500px]:text-[9.5px] ">@Álison de Rozado Batista</p></a>
                     </div>
 
                     <div className="flex flex-col gap-10 items-center w-[204px] max-[500px]:w-[160px] max-[400px]:w-[100px]">
