@@ -15,6 +15,9 @@ import sql from '../../assets/tecs/sql_logo.png';
 import styled from '../../assets/tecs/styledComponent_logo.png';
 import figma from '../../assets/tecs/figma_logo.png';
 import tailwind from '../../assets/tecs/tailwind_logo.png';
+import node from '../../assets/tecs/nodejs_logo.png';
+import c from '../../assets/tecs/cSharp_logo.png';
+import net from '../../assets/tecs/dotnet_logo.png';
 
 const tecList =
 [
@@ -136,6 +139,27 @@ const tecList =
         description: 'Tailwind CSS é um framework de design de código aberto para criação de interfaces de usuário em sites e aplicativos web. Ele difere de outros frameworks CSS, como Bootstrap e Foundation, em sua abordagem "utility-first" (utilitária em primeiro lugar).',
         descriptionEn: 'Tailwind CSS is an open source design framework for creating user interfaces in websites and web applications. It differs from other CSS frameworks such as Bootstrap and Foundation in its "utility-first" approach.',
         color: "#4CB2B5",
+    },
+    {
+        Name: "NODEJS",
+        logo: node,
+        description: 'Node.js é um ambiente de execução de JavaScript que permite que você execute código JavaScript no lado do servidor. Ele é baseado no motor V8 do Google Chrome e é conhecido por sua eficiência e escalabilidade.',
+        descriptionEn: 'Node.js is a JavaScript runtime environment that allows you to run JavaScript code on the server-side. It is based on the Google Chrome V8 engine and is known for its efficiency and scalability.',
+        color: "#77AD68",
+    },
+    {
+        Name: "C#",
+        logo: c,
+        description: 'C# é uma linguagem de programação de propósito geral desenvolvida pela Microsoft como parte da plataforma .NET. É amplamente utilizada para desenvolvimento de software de diversos tipos, incluindo aplicativos de desktop, aplicativos web, aplicativos móveis e jogos',
+        descriptionEn: 'C# is a general-purpose programming language developed by Microsoft as part of the .NET platform. It is widely used for developing software of various kinds, including desktop applications, web applications, mobile apps, and games.',
+        color: "#957DBB",
+    },
+    {
+        Name: "ASP.NET",
+        logo: net,
+        description: 'ASP.NET é um framework da Microsoft usado para desenvolver aplicativos web dinâmicos e robustos. Ele permite aos desenvolvedores criar sites e aplicativos web poderosos, usando uma variedade de linguagens de programação, como C# e Visual Basic.',
+        descriptionEn: 'ASP.NET is a Microsoft framework used for developing dynamic and robust web applications. It allows developers to create powerful websites and web applications using a variety of programming languages such as C# and Visual Basic.',
+        color: "#C073D8",
     },
 ];
 
