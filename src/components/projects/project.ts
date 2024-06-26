@@ -70,7 +70,7 @@ const listProj =
         tag: "FRONT END",
         describe: "O PROJETO ANALIST-COLOR É UMA INTERFACE CRIADA PARA INTEGRAR COM A API ANALIST-COLOR E DEMONSTRAR A SUA CAPACIDADE DE IDENTIFICAR CORES DE IMAGENS, SENDO UMA FERRAMENTA PARA DEVS E DESIGNERS.",
         describeEn: "THE ANALIST-COLOR PROJECT IS AN INTERFACE CREATED TO INTEGRATE WITH THE ANALIST-COLOR API AND DEMONSTRATE ITS ABILITY TO IDENTIFY IMAGE COLORS, BEING A TOOL FOR DEVS AND DESIGNERS",
-        site: "https://analist-color.vercel.app/",
+        site: "",
         repository: "https://github.com/alisonnRB/Interface-analist-color",
         more: ["VUE", "JAVASCRIPT", "RESTFULL", "POO", "HTML", "SASS"],
         img: colorAnalist,
