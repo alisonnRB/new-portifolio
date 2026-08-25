@@ -34,10 +34,11 @@ export default function Infos(props) {
                 </p>
 
                 <span className="flex justify-around w-full">
+                    {props.infos.repository ?
                     <div className="flex flex-col items-center gap-2">
                         <p className="text-[8px] max-[450px]:hidden">{props.lang == "PT_BR" ? "REPOSITÓRIO" : "REPOSITORY"}</p>
                         <a href={props.infos.repository} target="_blank"><img className="h-[35px] w-[35px] cursor-pointer max-[1090px]:h-[25px] max-[1090px]:w-[25px]" src={github} alt="github" /></a>
-                    </div>
+                    </div>: null}
 
                     {props.infos.site ?
                         <div className="flex flex-col gap-2">
