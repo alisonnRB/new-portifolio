@@ -7,12 +7,12 @@ import laravel from '../../assets/tecs/laravel_logo.png';
 import php from '../../assets/tecs/php_logo.png';
 import html from '../../assets/tecs/html_logo.png';
 import css from '../../assets/tecs/css_logo.png';
-import native from '../../assets/tecs/reactNative_logo.png';
+import docker from '../../assets/tecs/docker_logo.png';
 import sass from '../../assets/tecs/sass_logo.png';
 import git from '../../assets/tecs/git_logo.png';
 import python from '../../assets/tecs/python_logo.png';
 import sql from '../../assets/tecs/sql_logo.png';
-import styled from '../../assets/tecs/styledComponent_logo.png';
+import flask from '../../assets/tecs/flask_logo.png';
 import figma from '../../assets/tecs/figma_logo.png';
 import tailwind from '../../assets/tecs/tailwind_logo.png';
 import node from '../../assets/tecs/nodejs_logo.png';
@@ -85,11 +85,11 @@ const tecList =
         color: "#2962F1"
     },
     {
-        Name: "REACT NATIVE",
-        logo: native,
-        description: "React Native é um framework de código aberto desenvolvido pelo Facebook que permite criar aplicativos móveis nativos para iOS e Android usando JavaScript e React. Ele permite que os desenvolvedores usem uma única base de código para criar aplicativos para múltiplas plataformas.",
-        descriptionEn: "React Native is an open source framework developed by Facebook that allows you to create native mobile applications for iOS and Android using JavaScript and React. It allows developers to use a single codebase to create applications for multiple platforms.",
-        color: "#61DAFB",
+        Name: "DOCKER",
+        logo: docker,
+        description: "Docker é uma plataforma de código aberto que automatiza a implantação de aplicativos dentro de contêineres. Ele permite empacotar um aplicativo com todas as suas dependências em um contêiner padronizado, garantindo que ele seja executado de forma consistente em qualquer ambiente, seja no desenvolvimento, testes ou produção.",
+        descriptionEn: "Docker is an open source platform that automates the deployment of applications inside containers. It allows you to package an application with all its dependencies into a standardized container, ensuring it runs consistently in any environment, whether in development, testing, or production.",
+        color: "#2496ED",
     },
     {
         Name: "SASS",
@@ -120,11 +120,11 @@ const tecList =
         color: "#0079D6",
     },
     {
-        Name: "STYLED COMP.",
-        logo: styled,
-        description: "Styled Components é uma biblioteca popular de estilização em React. Ela permite que os desenvolvedores criem componentes React com estilos CSS encapsulados, utilizando uma sintaxe baseada em JavaScript e CSS.",
-        descriptionEn: "Styled Components is a popular React styling library. It allows developers to create React components with encapsulated CSS styles, using a syntax based on JavaScript and CSS.",
-        color: "#8257E6",
+        Name: "FLASK",
+        logo: flask,
+        description: "Flask é um microframework web em Python, conhecido por sua simplicidade e flexibilidade. Ele permite criar aplicações web e APIs de forma rápida e leve, com uma estrutura minimalista que facilita o desenvolvimento de projetos de pequeno a grande porte, oferecendo suporte a extensões para adicionar funcionalidades conforme necessário.",
+        descriptionEn: "Flask is a Python web microframework known for its simplicity and flexibility. It allows you to create web applications and APIs quickly and lightly, with a minimalist structure that facilitates the development of projects from small to large scale, offering support for extensions to add functionalities as needed.",
+        color: "#D1CDCD",
     },
     {
         Name: "FIGMA",
@@ -139,27 +139,6 @@ const tecList =
         description: 'Tailwind CSS é um framework de design de código aberto para criação de interfaces de usuário em sites e aplicativos web. Ele difere de outros frameworks CSS, como Bootstrap e Foundation, em sua abordagem "utility-first" (utilitária em primeiro lugar).',
         descriptionEn: 'Tailwind CSS is an open source design framework for creating user interfaces in websites and web applications. It differs from other CSS frameworks such as Bootstrap and Foundation in its "utility-first" approach.',
         color: "#4CB2B5",
-    },
-    {
-        Name: "NODEJS",
-        logo: node,
-        description: 'Node.js é um ambiente de execução de JavaScript que permite que você execute código JavaScript no lado do servidor. Ele é baseado no motor V8 do Google Chrome e é conhecido por sua eficiência e escalabilidade.',
-        descriptionEn: 'Node.js is a JavaScript runtime environment that allows you to run JavaScript code on the server-side. It is based on the Google Chrome V8 engine and is known for its efficiency and scalability.',
-        color: "#77AD68",
-    },
-    {
-        Name: "C#",
-        logo: c,
-        description: 'C# é uma linguagem de programação de propósito geral desenvolvida pela Microsoft como parte da plataforma .NET. É amplamente utilizada para desenvolvimento de software de diversos tipos, incluindo aplicativos de desktop, aplicativos web, aplicativos móveis e jogos',
-        descriptionEn: 'C# is a general-purpose programming language developed by Microsoft as part of the .NET platform. It is widely used for developing software of various kinds, including desktop applications, web applications, mobile apps, and games.',
-        color: "#957DBB",
-    },
-    {
-        Name: "ASP.NET",
-        logo: net,
-        description: 'ASP.NET é um framework da Microsoft usado para desenvolver aplicativos web dinâmicos e robustos. Ele permite aos desenvolvedores criar sites e aplicativos web poderosos, usando uma variedade de linguagens de programação, como C# e Visual Basic.',
-        descriptionEn: 'ASP.NET is a Microsoft framework used for developing dynamic and robust web applications. It allows developers to create powerful websites and web applications using a variety of programming languages such as C# and Visual Basic.',
-        color: "#C073D8",
     },
 ];
 

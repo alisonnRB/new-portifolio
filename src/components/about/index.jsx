@@ -109,7 +109,7 @@ export default function About(props) {
                     <p className="rotate-[-90deg] text-[20px] h-1 w-1 text-nowrap relative top-[10ch] right-[2.5ch]">{text.about[props.lang]}</p>
                     <span className="max-w-[700px] pl-[30px] pr-[10px] border-l-4 py-5 transition-colors duration-1000" style={{ borderLeftColor: cor }}>
                         <p className="text-[25px] mb-10 break-words  max-[420px]:text-[20px]">
-                            {text.name[props.lang]} <span className="font-sans">20</span> {text.old[props.lang]}
+                            {text.name[props.lang]} <span className="font-sans">{new Date().getUTCFullYear() - 2003}</span> {text.old[props.lang]}
                         </p>
                         <p className="text-[25px] break-words max-[420px]:text-[20px]">
                             {text.presentation[props.lang]}

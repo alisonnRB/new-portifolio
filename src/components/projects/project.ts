@@ -1,29 +1,59 @@
-import ihm from '../../assets/projects/ihm_page.png';
+import cafe2 from '../../assets/projects/cafe_page.png'
+import satosaFed from '../../assets/projects/sunet_page.png'
+import iam from '../../assets/projects/iam_page.png'
+import workcoffee from '../../assets/projects/workcoffee_page.png';
 import ihmB from '../../assets/projects/ihm_layout.png';
 
-import palabraria from '../../assets/projects/palabraria_page.png';
+import lumens from '../../assets/projects/lumens_page.png';
 import palabrariaB from '../../assets/projects/palabraria_layout.png';
 
-import ligths from '../../assets/projects/ligths_page.png';
-import portifolio from '../../assets/projects/portifolio_page.png';
-import myQuest from '../../assets/projects/myQuest_page.png';
-import box from '../../assets/projects/buildBox_page.png';
+import catchbeer from '../../assets/projects/catchbeer_page.png';
 
-import colorAnalist from '../../assets/projects/colorAnalist_page.png';
+import modernSpace from '../../assets/projects/modernspace_page.png';
 import colorAnalistB from '../../assets/projects/colorAnalist_layout.png';
 
 
 const listProj = 
 [
     {
-        name: "IHM",
-        tag: "FRONT END",
-        describe: "O IHM É UM REDE SOCIAL LITERARIA QUE PERMITE A INTERAÇÃO ENTRE OS LEITORES E ESCRITORES, PERMITINDO A CRIAÇÃO DE LIVROS, POSTS E CHATS. COM DIVERSOS SISTEMAS DE EDIÇÃO E CUSTOMIZAÇÃO",
-        describeEn: "IHM IS A LITERARY SOCIAL NETWORK THAT ALLOWS INTERACTION BETWEEN READERS AND WRITERS, ALLOWING THE CREATION OF BOOKS, POSTS AND CHATS. WITH VARIOUS EDITING AND CUSTOMIZATION SYSTEMS",
+        name: "CAFE 2.0",
+        tag: "BACK END",
+        describe: "O CAFE 2.0 É UMA SOLUÇÃO DE MODERNIZAÇÃO DA INFRAESTRUTURA DE AUTENTICAÇÃO DA CAFE (COMUNIDADE ACADÊMICA FEDERADA), QUE CONECTA MAIS DE 300 INSTITUIÇÕES BRASILEIRAS. O PROJETO IMPLEMENTA O PROTOCOLO OPENID FEDERATION 1.0 PARA AMPLIAR O ALCANCE DA REDE FEDERADA E PERMITIR INTEROPERABILIDADE COM EDUGAIN",
+        describeEn: "CAFE 2.0 IS A MODERNIZATION SOLUTION FOR THE AUTHENTICATION INFRASTRUCTURE OF CAFE (FEDERATED ACADEMIC COMMUNITY), WHICH CONNECTS MORE THAN 300 BRAZILIAN INSTITUTIONS. THE PROJECT IMPLEMENTS THE OPENID FEDERATION 1.0 PROTOCOL TO EXPAND THE REACH OF THE FEDERATED NETWORK AND ENABLE INTEROPERABILITY WITH EDUGAIN",
+        site: "https://gt-baita.ifrs.edu.br/",
+        repository: "",
+        more: ["PYTHON", "OPENID FEDERATION", "SAML2", "OIDC", "DOCKER", "RESTFULL", "JWT"],
+        img: cafe2,
+    },
+    {
+        name: "SATOSA-FEDERATION",
+        tag: "BACK END",
+        describe: "O SATOSA FEDERATION É UM FORK DO PROXY SATOSA, ADAPTADO PARA IMPLEMENTAR UM FRONTEND OPENID FEDERATION 1.0. A PRINCIPAL CONTRIBUIÇÃO FOI TRANSFORMAR O COMPORTAMENTO DE SINGLE TENANT PARA MULTITENANT, PERMITINDO QUE MÚLTIPLAS FEDERAÇÕES (TRUST ANCHORS) OPEREM SIMULTANEAMENTE NO MESMO PROXY",
+        describeEn: "SATOSA FEDERATION IS A FORK OF THE SATOSA PROXY, ADAPTED TO IMPLEMENT AN OPENID FEDERATION 1.0 FRONTEND. THE MAIN CONTRIBUTION WAS TRANSFORMING THE BEHAVIOR FROM SINGLE TENANT TO MULTITENANT, ALLOWING MULTIPLE FEDERATIONS (TRUST ANCHORS) TO OPERATE SIMULTANEOUSLY ON THE SAME PROXY",
         site: "",
-        repository: "https://github.com/alisonnRB/IHM",
-        more: ['REACT', "JAVASCRIPT", "RESTFULL", "WEBSOCKET", "TOKEN AUTH", "GOOGLE AUTH", "HTML", "CSS"],
-        img: ihm,
+        repository: "https://github.com/alisonnRB/satosa-federation",
+        more: ["PYTHON", "SAML2", "OIDC", "OPENID FEDERATION", "DOCKER", "RESTFULL", "JWT"],
+        img: satosaFed,
+    },
+    {
+        name: "IAM-PROXY-ITALIA",
+        tag: "BACK END",
+        describe: "O IAM PROXY ITALIA É UM FORK DO PROXY OFICIAL DO GOVERNO ITALIANO, ADAPTADO PARA TRANSFORMAR SEU COMPORTAMENTO DE SINGLE TENANT PARA MULTITENANT. IMPLEMENTA TRADUÇÃO DE PROTOCOLOS COMO SAML2, OIDC E OPENID4VC, E ADAPTA METADADOS PARA AUTENTICAÇÃO COM SPID, CIE, EIDAS E WALLET DIGITAL",
+        describeEn: "IAM PROXY ITALIA IS A FORK OF THE OFFICIAL ITALIAN GOVERNMENT PROXY, ADAPTED TO TRANSFORM ITS BEHAVIOR FROM SINGLE TENANT TO MULTITENANT. IT IMPLEMENTS PROTOCOL TRANSLATION LIKE SAML2, OIDC AND OPENID4VC, AND ADAPTS METADATA FOR AUTHENTICATION WITH SPID, CIE, EIDAS AND DIGITAL WALLET",
+        site: "",
+        repository: "https://github.com/alisonnRB/iam-proxy-italia",
+        more: ["PYTHON", "SAML2", "OIDC", "OPENID4VC", "DOCKER", "RESTFULL", "HASH"],
+        img: iam,
+    },
+    {
+        name: "WORK COFFEE",
+        tag: "FRONT END",
+        describe: "O WORKCOFFEE É UMA CAFETERIA COM MODELO DE NEGÓCIO ÚNICO, ONDE OS CLIENTES PAGAM PELO TEMPO DE USO DO ESPAÇO, IDEAL PARA TRABALHAR E ESTUDAR. COM WI-FI DE ALTA VELOCIDADE E BEBIDAS DE QUALIDADE",
+        describeEn: "WORKCOFFEE IS A COFFEE SHOP WITH A UNIQUE BUSINESS MODEL, WHERE CUSTOMERS PAY FOR THE TIME THEY USE THE SPACE, IDEAL FOR WORKING AND STUDYING. WITH HIGH-SPEED WI-FI AND QUALITY BEVERAGES",
+        site: "https://work-coffee.vercel.app/",
+        repository: "https://github.com/alisonnRB/Work-Coffee",
+        more: ['NEXT.JS', "REACT", "TAILWIND CSS", "JAVASCRIPT", "HTML", "CSS"],
+        img: workcoffee,
     },
     {
         name: "IHM-SERVER",
@@ -36,14 +66,14 @@ const listProj =
         img: ihmB,
     },
     {
-        name: "PALABRARIA",
+        name: "LUMENS",
         tag: "FRONT END",
-        describe: "O PROJETO PALABRARIA É DICIONÁRIO ILUSTRADO VIRTUAL E GRATUITO DA LÍNGUA ESPANHOLA, COM O OBJETIVO DE AMPLIAR O REPERTÓRIO LINGUÍSTICO DE MANEIRA COLABORATIVA COM AS INSTITUIÇÕES EDUCACIONAIS.",
-        describeEn: "THE WORDS PROJECT IS A FREE VIRTUAL ILLUSTRATED DICTIONARY OF THE SPANISH LANGUAGE, WITH THE AIM OF EXPANDING THE LINGUISTIC REPERTOIRE IN A COLLABORATIVE WAY WITH EDUCATIONAL INSTITUTIONS.",
-        site: "",
-        repository: "https://github.com/alisonnRB/new-palabraria",
-        more: ["REACT", "JAVASCRIPT", "RESTFULL", "TOKEN AUTH", "SASS", "HTML"],
-        img: palabraria,
+        describe: "LUMENS É O PORTFÓLIO DE DUAS IRMÃS FOTÓGRAFAS, COM UM DESIGN ELEGANTE E MODERNO, GALERIA INTERATIVA, SEÇÃO SOBRE E INFORMAÇÕES DE CONTATO. DESENVOLVIDO PARA UMA EXPERIÊNCIA DINÂMICA E RESPONSIVA",
+        describeEn: "LUMENS IS THE PORTFOLIO OF TWO SISTER PHOTOGRAPHERS, WITH AN ELEGANT AND MODERN DESIGN, INTERACTIVE GALLERY, ABOUT SECTION AND CONTACT INFORMATION. DEVELOPED FOR A DYNAMIC AND RESPONSIVE EXPERIENCE",
+        site: "https://lumen-rho.vercel.app/",
+        repository: "https://github.com/alisonnRB/Lumen",
+        more: ["NEXT.JS", "REACT", "TAILWIND CSS", "JAVASCRIPT", "HTML", "CSS"],
+        img: lumens,
     },
     {
         name: "PALABRARIA SERVER",
@@ -56,24 +86,24 @@ const listProj =
         img: palabrariaB,
     },
     {
-        name: "MY QUEST",
+        name: "CATCH BEER",
         tag: "FRONT END",
-        describe: "O MYQUEST É UM FERRAMENTA CRIADA PARA AUXILIAR NO ESTUDO DAS MAIS DIVERSAS ÁREAS, UTILIZANDO DE INTELIGENCIA ARTIFICIAL PARA GERAR UM QUIS DE PERGUNTAS SOBRE QUALQUER TEMA.",
-        describeEn: "THE MYQUEST IS A TOOL CREATED TO ASSIST IN THE STUDY OF THE MOST DIVERSE AREAS, USING ARTIFICIAL INTELLIGENCE TO GENERATE A SERIES OF QUESTIONS ON ANY TOPIC.",
-        site: "https://my-quest-sigma.vercel.app/",
-        repository: "https://github.com/alisonnRB/myQuest",
-        more: ["ANGULAR", "TYPESCRIPT", "POO", "RESTFULL", "TAILWIND", "HTML"],
-        img: myQuest,
+        describe: "CATCH BEER É UM SITE DE DELIVERY DE BEBIDAS COM CATÁLOGO DIVERSIFICADO, DESIGN INTUITIVO E NAVEGAÇÃO FÁCIL, OFERECENDO UMA EXPERIÊNCIA PRÁTICA E EFICIENTE PARA OS AMANTES DE BEBIDAS",
+        describeEn: "CATCH BEER IS A BEVERAGE DELIVERY WEBSITE WITH A DIVERSE CATALOG, INTUITIVE DESIGN AND EASY NAVIGATION, OFFERING A PRACTICAL AND EFFICIENT EXPERIENCE FOR BEVERAGE LOVERS",
+        site: "https://catche-beer.vercel.app/",
+        repository: "https://github.com/alisonnRB/catche-beer",
+        more: ["NEXT.JS", "REACT", "TAILWIND CSS", "JAVASCRIPT", "HTML", "CSS"],
+        img: catchbeer,
     },
     {
-        name: "COLOR-ANALIST",
+        name: "MODERN SPACE",
         tag: "FRONT END",
-        describe: "O PROJETO ANALIST-COLOR É UMA INTERFACE CRIADA PARA INTEGRAR COM A API ANALIST-COLOR E DEMONSTRAR A SUA CAPACIDADE DE IDENTIFICAR CORES DE IMAGENS, SENDO UMA FERRAMENTA PARA DEVS E DESIGNERS.",
-        describeEn: "THE ANALIST-COLOR PROJECT IS AN INTERFACE CREATED TO INTEGRATE WITH THE ANALIST-COLOR API AND DEMONSTRATE ITS ABILITY TO IDENTIFY IMAGE COLORS, BEING A TOOL FOR DEVS AND DESIGNERS",
-        site: "",
-        repository: "https://github.com/alisonnRB/Interface-analist-color",
-        more: ["VUE", "JAVASCRIPT", "RESTFULL", "POO", "HTML", "SASS"],
-        img: colorAnalist,
+        describe: "MODERN SPACE É UM SITE DE APRESENTAÇÃO PARA UMA LOJA DE MÓVEIS PLANEJADOS E MODULADOS, COM DESIGN MODERNO E ELEGANTE, EXIBINDO PRODUTOS SOFISTICADOS, CATEGORIAS E PROMOÇÕES",
+        describeEn: "MODERN SPACE IS A PRESENTATION WEBSITE FOR A FURNITURE STORE WITH CUSTOM AND MODULAR FURNITURE, WITH MODERN AND ELEGANT DESIGN, SHOWCASING SOPHISTICATED PRODUCTS, CATEGORIES AND PROMOTIONS",
+        site: "https://modern-space-zeta.vercel.app/",
+        repository: "https://github.com/alisonnRB/Modern-Space",
+        more: ["NEXT.JS", "REACT", "TAILWIND CSS", "JAVASCRIPT", "HTML", "CSS"],
+        img: modernSpace,
     },
     {
         name: "COLOR-ANALIST API",
@@ -84,36 +114,6 @@ const listProj =
         repository: "https://github.com/alisonnRB/Color-Analist-laravel",
         more: ["LARAVEL", "PHP", "RESTFULL", "POO"],
         img: colorAnalistB,
-    },
-    {
-        name: "LIGHTS",
-        tag: "FRONT END",
-        describe: "LIGHTS É UMA JOGO DE MEMORIZAÇAO BASEADA EM LUZES, QUE GERA VARIAÇÕES E DIFICULDADES DIFERENTES.",
-        describeEn: "LIGHTS IS A MEMORIZATION GAME BASED ON LIGHTS, WHICH GENERATES DIFFERENT VARIATIONS AND DIFFICULTIES.",
-        site: "https://portifolio-nu-azure.vercel.app/",
-        repository: "https://github.com/alisonnRB/Lights",
-        more: ["REACT", "JAVASCRIPT", "SASS", "HTML"],
-        img: ligths,
-    },
-    {
-        name: "PORTFÓLIO",
-        tag: "FRONT END",
-        describe: "PORTFÓLIO DESENVOLVIDO PARA APRESENTAR MINHAS HABILIDADES E POTENCIAL.",
-        describeEn: "PORTFOLIO DESIGNED TO PRESENT MY SKILLS AND POTENTIAL.",
-        site: "",
-        repository: "https://github.com/alisonnRB/new-portifolio",
-        more: ['REACT', "JAVASCRIPT", "TAILWIND", "HTML", "CSS", "TYPESCRIPT"],
-        img: portifolio,
-    },
-    {
-        name: "BUILD BOX",
-        tag: "FRONT END",
-        describe: "ESSE FOI MEU PRIMEIRO DESAFIO DEV, CONSISTE NA REPRODUÇÃO DO DESIGN DE UM SISTEMA DE PUBLICAÇÕES NO FRONT END",
-        describeEn: "THIS WAS MY FIRST DEV CHALLENGE, CONSISTS OF REPRODUCING THE DESIGN OF A FRONT END PUBLICATION SYSTEM",
-        site: "https://web-developer-challenge-gray.vercel.app/",
-        repository: "https://github.com/alisonnRB/web-developer-challenge",
-        more: ['REACT', "TYPESCRIPT", "STYLED COMPONENTS", "HTML", "CSS", "JAVASCRIPT"],
-        img: box,
     },
 ];
 

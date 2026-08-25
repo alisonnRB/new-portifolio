@@ -4,7 +4,7 @@ import { listProj } from "./project.ts";
 import { useInView } from "react-intersection-observer";
 
 export default function Projects(props) {
-    const [type, setType] = useState("FRONT END");
+    const [type, setType] = useState("BACK END");
     const [ref, inView] = useInView();
 
     useEffect(() => {

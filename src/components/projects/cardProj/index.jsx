@@ -16,8 +16,8 @@ export default function CardProj(props) {
                 max-[390px]:max-w-[95vw] max-[390px]:min-w-[95vw] max-[390px]:h-[180px]"
                 style={{
                     backgroundImage: `url(${props.infos.img})`,
-                    backgroundRepeat: props.infos.tag === "FRONT END" ? "no-repeat" : "repeat",
-                    backgroundSize: props.infos.tag === "FRONT END" ? (!hover ? "100% 100%" : "120% 120%") : (!hover ? "50% 50%" : "60% 60%"),
+                    backgroundRepeat: props.infos.tag === "FRONT END" || props.infos.site !== "" ? "no-repeat" : "repeat",
+                    backgroundSize: props.infos.tag === "FRONT END" || props.infos.site !== "" ? (!hover ? "100% 100%" : "120% 120%") : (!hover ? "50% 50%" : "60% 60%"),
 
                 }}
                 onMouseEnter={() => { setHover(true) }}
